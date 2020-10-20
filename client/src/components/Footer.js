@@ -1,0 +1,41 @@
+import { black } from 'colors'
+import React from 'react'
+import { Container, Row, Col, Image } from 'react-bootstrap';
+// import {shopify} from '../images/shopify.jpg'
+
+const Footer = () => {
+  return (
+    <footer>
+      <Container>
+        <Row>
+          <Col className='text-center py-3'>Latest</Col>
+          <Col className='text-center py-3'>Information</Col>
+          <Col className='text-center py-3'>Services</Col>
+          <Col className='text-center py-3'>Support</Col>
+          <Col>
+            <div className='social-media'>
+              <br />
+              <i className='fab fa-yelp'>&nbsp;Yelp</i>
+              <br />
+              <i className='fab fa-facebook'>&nbsp;Facebook</i>
+              <br />
+              <i className='fab fa-twitter'>&nbsp;Twitter</i>
+              <br />
+              <i className='fab fa-google'>&nbsp;Maps</i>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Image src='./images/shopify.jpg' style={{height: '130px'}} />
+          </Col>
+          <Col className='text-center py-3'>
+            Powered by Shopify <br /> &copy; 2020 https://monarchtracker.com/
+          </Col>
+        </Row>
+      </Container>
+    </footer>
+  )
+}
+
+export default Footer
