@@ -1,4 +1,4 @@
-const asyncHandler = require('express-async-handler');
+const asyncHandler = require('../middleware/asyncHandler');
 const Product = require('../models/productModel.js');
 
 // @desc    Fetch all products

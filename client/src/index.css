@@ -50,7 +50,42 @@ h2 {
 footer {
   background: linear-gradient(#446690, #333a84);
 }
-
+/* 
 .card, .list-group .list-group-flush {
   margin-top: 550px;
+} */
+
+/* .credit-cards {
+  margin-bottom: 100px;
+} */
+
+.categories-screen {
+  align-items: center;
+  background-color: rgb(207, 203, 203);
+  /* border: 1px solid black; */
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 5rem 0;
+  text-align: center;
+  padding: 60px 30px;
+  position: relative;
 }
+
+@media (max-width: 1040px) {
+  .categories-screen {
+    display: block;
+    padding: 0;
+    margin: 3rem 0;
+    padding: 30px;
+  }
+  .categories-screen-div {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* #search-icon {
+  padding-left: 60px;
+} */

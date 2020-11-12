@@ -1,4 +1,4 @@
-const asyncHandler = require('express-async-handler');
+const asyncHandler = require('../middleware/asyncHandler');
 const Order = require('../models/orderModel.js');
 
 // @desc    Create new order

@@ -1,5 +1,14 @@
-const path = require('path');
 const express = require('express');
+const app = express()
+// Allow cross-origin.....
+app.use(function(req, res, next) { 
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+  next();
+});
+const path = require('path');
+const cors = require('cors');
 const dotenv = require('dotenv');
 const colors = require('colors');
 const morgan = require('morgan');
@@ -15,11 +24,13 @@ dotenv.config({ path: './config/config.env' });
 
 connectDB()
 
-const app = express()
-
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'))
 }
+
+// Blocked by CORS policy: Request header field x-auth-token is not 
+// allowed by Access-Control-Allow-Headers in preflight response.
+app.use(cors());
 
 app.use(express.json())
 

@@ -1,5 +1,7 @@
 import React from 'react'
 import { Pagination } from 'react-bootstrap'
+// import Pagination from '@material-ui/core/Button';
+
 import { LinkContainer } from 'react-router-bootstrap'
 
 const Paginate = ({ pages, page, isAdmin = false, keyword = '' }) => {

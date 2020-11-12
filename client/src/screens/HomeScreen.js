@@ -1,14 +1,17 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap';
+// actions
+import { listProducts } from '../actions/productActions'
+// components
+import Categories from '../components/Categories'
 import Product from '../components/Product'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel'
 import Meta from '../components/Meta'
-import { listProducts } from '../actions/productActions'
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword
@@ -34,6 +37,10 @@ const HomeScreen = ({ match }) => {
           <i className="fas fa-arrow-left" /> Back
         </Link>
       )}
+      <marquee scrollamount="17">
+        <h3><a href="#">SUBSCRIBE!</a> - Exclusive deals from Monarchtracker.</h3>
+      </marquee>
+      <Categories />
       <h1>Latest Products</h1>
       {loading ? (
         <Loader />
@@ -43,7 +50,13 @@ const HomeScreen = ({ match }) => {
         <>
           <Row>
             {products.map((product) => (
-              <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+              <Col 
+                key={product._id} 
+                sm={12} 
+                md={4} 
+                // lg={4} 
+                // xl={3}
+              >
                 <Product product={product} />
               </Col>
             ))}

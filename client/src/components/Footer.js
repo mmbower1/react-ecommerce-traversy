@@ -29,9 +29,18 @@ const Footer = () => {
           <Col>
             <Image src='./images/shopify.jpg' style={{height: '130px'}} />
           </Col>
+          <Col>
+            <div className="credit-cards">
+              <Image src='./images/american-express.png' alt="american-express.png" />
+              <Image src='./images/discover.png' alt="discover.png" />
+              <Image src='./images/mastercard.png' alt="mastercard.png" />
+              <Image src='./images/visa.png' alt="visa.png" />
+            </div>
+          </Col>
           <Col className='text-center py-3'>
             Powered by Shopify <br /> &copy; 2020 https://monarchtracker.com/
           </Col>
+          
         </Row>
       </Container>
     </footer>

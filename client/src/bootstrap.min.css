@@ -2547,7 +2547,7 @@ textarea.form-control.is-invalid {
   }
   .form-inline .form-control {
     display: inline-block;
-    width: 250px;
+    width: 325px;
     vertical-align: middle;
   }
   .form-inline .form-control-plaintext {
@@ -9831,8 +9831,8 @@ a.text-dark:focus {
   margin-right: 2rem;
 }
 .btn {
-  font-size: 1.765625rem;
-  text-transform: uppercase;
+  font-size: 1.465625rem;
+  /* text-transform: uppercase; */
 }
 .btn-sm,
 .btn-group-sm > .btn {
