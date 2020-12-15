@@ -33,6 +33,7 @@ const getProductById = asyncHandler(async (req, res) => {
 
   if (product) {
     res.json(product)
+    console.log('product ', product);
   } else {
     res.status(404)
     throw new Error('Product not found')
@@ -152,10 +153,10 @@ const createProductReview = asyncHandler(async (req, res) => {
 // @route   GET /api/products/top
 // @access  Public
 const getTopProducts = asyncHandler(async (req, res) => {
-  const products = await Product.find({}).sort({ rating: -1 }).limit(3)
+  const products = await Product.find({}).sort({ rating: -1 }).limit(6)
 
   res.json(products)
-})
+});
 
 module.exports = {
   getProducts,

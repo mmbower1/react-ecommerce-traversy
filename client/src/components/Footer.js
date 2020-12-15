@@ -12,6 +12,14 @@ const Footer = () => {
           <Col className='text-center py-3'>Information</Col>
           <Col className='text-center py-3'>Services</Col>
           <Col className='text-center py-3'>Support</Col>
+        </Row>
+        <Row>
+          {/* <Col>
+            <Image src='./images/shopify.jpg' style={{height: '130px'}} />
+          </Col> */}
+          <Col className='text-center py-3'>
+            Powered by Shopify <br /> &copy; 2020 https://monarchtracker.com/
+          </Col>
           <Col>
             <div className='social-media'>
               <br />
@@ -24,11 +32,6 @@ const Footer = () => {
               <i className='fab fa-google'>&nbsp;Maps</i>
             </div>
           </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Image src='./images/shopify.jpg' style={{height: '130px'}} />
-          </Col>
           <Col>
             <div className="credit-cards">
               <Image src='./images/american-express.png' alt="american-express.png" />
@@ -37,11 +40,8 @@ const Footer = () => {
               <Image src='./images/visa.png' alt="visa.png" />
             </div>
           </Col>
-          <Col className='text-center py-3'>
-            Powered by Shopify <br /> &copy; 2020 https://monarchtracker.com/
-          </Col>
-          
         </Row>
+        
       </Container>
     </footer>
   )

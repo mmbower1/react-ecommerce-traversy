@@ -15,8 +15,7 @@ import Meta from '../components/Meta'
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword
-
-  const pageNumber = match.params.pageNumber || 1
+  const pageNumber = match.params.pageNumber || 1;
 
   const dispatch = useDispatch()
 
@@ -41,7 +40,9 @@ const HomeScreen = ({ match }) => {
         <h3><a href="#">SUBSCRIBE!</a> - Exclusive deals from Monarchtracker.</h3>
       </marquee>
       <Categories />
-      <h1>Latest Products</h1>
+      <h1 className="homescreen-header" style={{'text-decoration': 'underline'}}>
+        <i className="fas fa-arrow-down"></i>&nbsp;Latest Products
+      </h1>
       {loading ? (
         <Loader />
       ) : error ? (

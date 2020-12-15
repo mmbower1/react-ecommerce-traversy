@@ -1,7 +1,7 @@
 {
-  "name": "proshop",
+  "name": "react-ecommerce-traversy",
   "version": "1.0.0",
-  "description": "MERN shopping cart app",
+  "description": "Matt's MERN ecommerce website",
   "main": "server.js",
   "scripts": {
     "start": "node server",
@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix && npm run build --prefix"
   },
-  "author": "Brad Traversy",
+  "author": "Matthew Bower",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
