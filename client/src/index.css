@@ -45,8 +45,8 @@ h2 {
 .carousel img {
   height: 250px;
   padding: 30px;
-  margin: 40px;
-  border-radius: 5%;
+  margin: 20px 0;
+  border-radius: 30%;
 }
 .carousel a {
   margin: 0 auto;
@@ -151,6 +151,38 @@ footer {
 
 .subscribe-button-container {
   text-align: center;
+}
+
+.subscribe-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.subscribe-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.subscribe-button:hover span {
+  padding-right: 25px;
+}
+
+.subscribe-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media (max-width: 1040px) {
+  .subscribe-button {
+    font-size: 20px;
+    width: 90%;
+  }
 }
 
 /* #search-icon {
