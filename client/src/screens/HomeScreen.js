@@ -12,6 +12,7 @@ import Loader from '../components/Loader'
 import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel'
 import Meta from '../components/Meta'
+import SubscribeButton from '../components//SubscribeButton';
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword
@@ -36,9 +37,7 @@ const HomeScreen = ({ match }) => {
           <i className="fas fa-arrow-left" /> Back
         </Link>
       )}
-      <marquee scrollamount="17">
-        <h3><a href="#">SUBSCRIBE!</a> - Exclusive deals from Monarchtracker.</h3>
-      </marquee>
+      <SubscribeButton />
       <Categories />
       <h1 className="homescreen-header" style={{'text-decoration': 'underline'}}>
         <i className="fas fa-arrow-down"></i>&nbsp;Latest Products

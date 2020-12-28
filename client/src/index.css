@@ -28,7 +28,7 @@ h2 {
 }
 .carousel-caption {
   position: absolute;
-  top: 0;
+  top: -10px;
 }
 
 .carousel-caption h2 {
@@ -43,7 +43,7 @@ h2 {
 }
 
 .carousel img {
-  height: 300px;
+  height: 250px;
   padding: 30px;
   margin: 40px;
   border-radius: 5%;
@@ -79,7 +79,7 @@ footer {
   background: linear-gradient(#446690, #333a84) !important;
   /* border: 1px solid black; */
   display: flex;
-  font-size: 26px;
+  font-size: 38px;
   justify-content: center;
   justify-content: space-between;
   margin: 0;
@@ -125,6 +125,32 @@ footer {
     height: 25px;
     width: 30px;
   }
+}
+
+/* .navbar {
+  position: fixed;
+} */
+
+.shopify {
+  color: limegreen;
+}
+
+.subscribe-button {
+  border-radius: 4px;
+  background-color: darkblue;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 28px;
+  margin: 10px 0;
+  padding: 20px;
+  transition: all 0.5s;
+  text-align: center;
+  width: 600px;
+}
+
+.subscribe-button-container {
+  text-align: center;
 }
 
 /* #search-icon {

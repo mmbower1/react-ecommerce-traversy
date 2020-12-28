@@ -18,7 +18,7 @@ const Footer = () => {
             <Image src='./images/shopify.jpg' style={{height: '130px'}} />
           </Col> */}
           <Col className='text-center py-3'>
-            Powered by Shopify <br /> &copy; 2020 https://monarchtracker.com/
+            Powered by <span className="shopify">Shopify</span> <br /> &copy; 2020 https://monarchtracker.com/
           </Col>
           <Col>
             <div className='social-media'>

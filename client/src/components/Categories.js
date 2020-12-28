@@ -6,7 +6,6 @@ const Categories = () => {
   const dispatch = useDispatch()
   const directoryList = useSelector((state) => state.directory)
   const { sections } = directoryList;
-  console.log('directory list: ', sections)
 
   // useEffect(() => {
   //   dispatch(listProducts(keyword, pageNumber))
