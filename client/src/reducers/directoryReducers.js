@@ -1,7 +1,7 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: 'Accessory',
+      title: 'Extras',
       imageUrl: 'https://images.unsplash.com/photo-1507457379470-08b800bebc67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
       // size: 'small',
       id: 1,
@@ -36,7 +36,7 @@ const INITIAL_STATE = {
       linkUrl: 'shop/mobile'
     },
     {
-      title: "Television",
+      title: "TV",
       imageUrl: 'https://images.unsplash.com/photo-1606646079334-198d57d26911?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8c21hcnQlMjB0dnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60',
       // size: 'small',
       id: 5,

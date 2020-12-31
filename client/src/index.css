@@ -79,30 +79,44 @@ footer {
   background: linear-gradient(#446690, #333a84) !important;
   /* border: 1px solid black; */
   display: flex;
-  font-size: 38px;
+  font-size: 28px;
   justify-content: center;
   justify-content: space-between;
   margin: 0;
-  text-align: center;
-  padding: 5px 30px;
+  padding: 5px 15px;
   position: relative;
+  text-align: center;
   text-shadow: white 0px 0px 10px;
   width: 100%;
 }
 
 .categories-screen-div {
   background-size: cover;
-  width: 100%;
-  padding: 25px;
   background-color: linear-gradient(
     rgba(0, 0, 0, 0.8),
     rgba(0, 0, 0, 0.8)
   ), url('https://images.unsplash.com/photo-1524234107056-1c1f48f64ab8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjJ8fHRlY2glMjBwcm9kdWN0c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60');
+  padding: 55px 0;
+  text-align: center;
+  width: 100%;
+  max-height: 100vh;
+
 }
 
 .homescreen-header {
   margin-top: 50px;
   padding: 0;
+}
+
+.form-container button {
+  margin-top: 20px;
+  border-radius: 4px;
+  background-color: darkblue;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.5s;
+  text-align: center;
 }
 
 @media (max-width: 1040px) {
@@ -119,6 +133,7 @@ footer {
   .categories-screen-div {
     font-size: 30px;
     margin-bottom: .5rem;
+    padding: 15px 0;
     /* margin-bottom: -1px; */
   }
   .credit-cards > * {
@@ -139,7 +154,7 @@ footer {
   border-radius: 4px;
   background-color: darkblue;
   border: none;
-  color: #FFFFFF;
+  color: #fff;
   cursor: pointer;
   font-size: 28px;
   margin: 10px 0;
@@ -176,6 +191,23 @@ footer {
 .subscribe-button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.subscribe-form {
+  align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fHRlY2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60');
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-form input {
+  margin: 30px 20px;
+  padding: 15px;
+}
+
+.subscribe-form button {
+  margin: 50px;
+  width: 50%;
 }
 
 @media (max-width: 1040px) {
