@@ -32,7 +32,7 @@ const SubscribeButton = () => {
   return (
     <div className="subscribe-button-container">
       <button className="subscribe-button" onClick={() => setOpenModal(true)}>
-        <span>Subscribe for Exclusive deals! </span>
+        <span>Subscribe!</span>
       </button>
       <Modal 
         className="subscribe-modal"
@@ -41,6 +41,10 @@ const SubscribeButton = () => {
         style={customStyles}
       >
         <div className="form-container">
+          {/* <i className="fas fa-times-circle"></i> */}
+          {/* <h1>&times;</h1> */}
+          {/* <h4>Exclusive deals just for you!</h4> */}
+          
           <form className="subscribe-form" onSubmit={handleSubmit(onSubmit)}>
             <input 
               type="text" 
@@ -70,7 +74,7 @@ const SubscribeButton = () => {
           </form>
         </div>
         
-        <button onClick={() => setOpenModal(false)}>Close</button>
+        {/* <button onClick={() => setOpenModal(false)}>Close</button> */}
       </Modal>
     </div>
   )

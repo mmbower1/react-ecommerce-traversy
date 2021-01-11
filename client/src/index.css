@@ -108,6 +108,11 @@ footer {
   padding: 0;
 }
 
+.form-container h4 {
+  font-size: 30px;
+  margin-top: -50px;
+}
+
 .form-container button {
   margin-top: 20px;
   border-radius: 4px;
@@ -140,11 +145,37 @@ footer {
     height: 25px;
     width: 30px;
   }
+
+  .subscribe-form button {
+    font-size: 15px;
+  }
+
+  .subscribe-form {
+    width: 100% !important;
+  }
+
+  .subscribe-modal {
+    font-size: 10px !important;
+    margin: 100px -90px !important;
+    width: 100% !important;
+    z-index: 2;
+  }
+
+  .subscribe-modal h4 {
+    line-height: 20px;
+    font-size: 20px !important;
+  }
+
+  .subscribe-modal input {
+    font-size: 15px !important;
+    width: 85% !important;
+  }
+  
 }
 
-/* .navbar {
+.subscribe-modal {
   position: fixed;
-} */
+}
 
 .shopify {
   color: limegreen;
@@ -198,15 +229,26 @@ footer {
   background-image: url('https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fHRlY2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60');
   display: flex;
   flex-direction: column;
+  position: relative;
+  /* margin-top: -50px; */
+	width: 100%;
 }
 
 .subscribe-form input {
+  border-radius: 2px;
+  border: none;
+  font-size: 1.2rem;
   margin: 30px 20px;
   padding: 15px;
 }
 
 .subscribe-form button {
+  background-color: rgba(0, 170, 255);
+  border: none;
+  cursor: pointer;
+  color:#fff;
   margin: 50px;
+  padding: 20px 0;
   width: 50%;
 }
 
