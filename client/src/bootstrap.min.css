@@ -4249,21 +4249,26 @@ input[type='button'].btn-block {
   display: block;
 }
 .navbar {
-  position: relative;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 1rem;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1.5rem 1rem;
-  font-size: 1rem;
+  position: relative;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
+
+
 .navbar .container,
 .navbar .container-fluid,
 .navbar .container-sm,
@@ -4282,6 +4287,7 @@ input[type='button'].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3359375rem;
@@ -6331,11 +6337,11 @@ a.close.disabled {
   right: 15%;
   bottom: 20px;
   left: 15%;
-  z-index: 10;
   padding-top: -15px;
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
+  z-index: 0;
 }
 @-webkit-keyframes spinner-border {
   to {
@@ -7996,7 +8002,7 @@ button.bg-dark:focus {
 }
 .pt-3,
 .py-3 {
-  padding-top: 1rem !important;
+  padding-top: 7rem !important;
 }
 .pr-3,
 .px-3 {

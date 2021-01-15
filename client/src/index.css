@@ -151,11 +151,15 @@ footer {
   }
 
   .subscribe-form {
+    background-size: cover !important;
+    height: 500px !important;
     width: 100% !important;
   }
 
   .subscribe-modal {
     font-size: 10px !important;
+    line-height: 5px !important;
+    padding: 40px !important;
     margin: 100px -90px !important;
     width: 100% !important;
     z-index: 2;
