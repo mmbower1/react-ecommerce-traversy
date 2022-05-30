@@ -2,7 +2,7 @@
   "name": "react-ecommerce-traversy",
   "version": "1.0.0",
   "description": "Matt's MERN ecommerce website",
-  "main": "server.js",
+  "main": "server.ts",
   "scripts": {
     "start": "node server",
     "server": "nodemon server",

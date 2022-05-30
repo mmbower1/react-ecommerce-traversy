@@ -158,20 +158,20 @@ footer {
 
   .subscribe-modal {
     font-size: 10px !important;
-    line-height: 5px !important;
-    padding: 40px !important;
-    margin: 100px -90px !important;
+    line-height: 10px !important;
+    padding-right: 40px !important;
+    margin: 80px -90px !important;
     width: 100% !important;
     z-index: 2;
   }
 
   .subscribe-modal h4 {
-    line-height: 20px;
     font-size: 20px !important;
   }
 
   .subscribe-modal input {
     font-size: 15px !important;
+    height: 40px;
     width: 85% !important;
   }
   
@@ -266,3 +266,7 @@ footer {
 /* #search-icon {
   padding-left: 60px;
 } */
+
+#register-button, #login-button {
+  color: red;
+}

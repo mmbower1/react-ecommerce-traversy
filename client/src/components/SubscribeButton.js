@@ -18,9 +18,10 @@ const SubscribeButton = () => {
       bottom: 'auto',
       // display: 'flex',
       left: '19%',
-      marginTop: '20px',
+      marginTop: '100px',
       position: 'relative',
-      padding: '90px',
+      padding: '60px',
+      top: '10%',
       textAlign: 'center',
       width: '60%'
     },
