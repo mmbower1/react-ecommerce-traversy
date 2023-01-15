@@ -37,15 +37,14 @@ h2 {
 
 @media (max-width: 1040px) {
   .carousel-caption h2 {
-    line-height: 1rem;
+    line-height: 1.2rem;
     font-size: 16px;
   }
 }
 
 .carousel img {
   height: 250px;
-  padding: 30px;
-  margin: 20px 0;
+  padding: 40px;
   border-radius: 30%;
 }
 .carousel a {
@@ -92,15 +91,12 @@ footer {
 
 .categories-screen-div {
   background-size: cover;
-  background-color: linear-gradient(
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.8)
-  ), url('https://images.unsplash.com/photo-1524234107056-1c1f48f64ab8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjJ8fHRlY2glMjBwcm9kdWN0c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60');
+  background-color: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://images.unsplash.com/photo-1524234107056-1c1f48f64ab8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjJ8fHRlY2glMjBwcm9kdWN0c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60");
   padding: 55px 0;
   text-align: center;
   width: 100%;
   max-height: 100vh;
-
 }
 
 .homescreen-header {
@@ -137,7 +133,7 @@ footer {
   }
   .categories-screen-div {
     font-size: 30px;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     padding: 15px 0;
     /* margin-bottom: -1px; */
   }
@@ -212,7 +208,7 @@ footer {
 }
 
 .subscribe-button span:after {
-  content: '\00bb';
+  content: "\00bb";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -231,12 +227,12 @@ footer {
 
 .subscribe-form {
   align-items: center;
-  background-image: url('https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fHRlY2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60');
+  background-image: url("https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fHRlY2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60");
   display: flex;
   flex-direction: column;
   position: relative;
   /* margin-top: -50px; */
-	width: 100%;
+  width: 100%;
 }
 
 .subscribe-form input {
@@ -251,7 +247,7 @@ footer {
   background-color: darkblue;
   border: none;
   cursor: pointer;
-  color:#fff;
+  color: #fff;
   margin: 50px;
   padding: 20px 0;
   width: 50%;
@@ -268,6 +264,7 @@ footer {
   padding-left: 60px;
 } */
 
-#register-button, #login-button {
+#register-button,
+#login-button {
   color: red;
 }
